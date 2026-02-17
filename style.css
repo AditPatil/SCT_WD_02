@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #666;
+}
+
+.operator {
+    background-color: #f9a826;
+    color: #111;
+}
+
+.operator:hover {
+    background-color: #e0961f;
+}
+
+.clear {
+    background-color: #ef4444;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #dc2626;
+}
+
+.equal {
+    background-color: #10b981;
+    grid-row: span 2; /* Makes the equal button taller */
+    height: 100%;
+}
+
+.equal:hover {
+    background-color: #059669;
+}
+
+.zero {
+    grid-column: span 2; /* Makes the zero button wider */
+}
